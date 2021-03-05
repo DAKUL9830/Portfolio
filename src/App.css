@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+:root{
+  --white:#fff;
+  --orange:#f9ab00;
+  --dark:rgba(255,255,255,0)
+}
+
+body{
+font-family:"Roboto Condensed sans-serif";
+};
 .App {
   text-align: center;
 }
@@ -35,4 +46,28 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/*===========LINKS========*/
+nav a.nav-link{
+  /* font-weight:500; */
+  letter-spacing:0.0375;
+  cursor:pointer;
+}
+
+nav ul li{
+  text-transform:uppercase;
+}
+.navbar-nav > li > a {
+  margin-right:0.75rem;
+  margin-left:0.75rem;
+ color:var(--white)!important;
+ border-top:0.1875rem solid var(--dark)
+
+}
+.navbar-nav > li > a.active,.navbar-nav > li > a.active:focus{
+  border-top:0.1875rem solid var(--orange)
+}
+.navbar-nav > li > a:hover{
+  border-top:0.1875rem solid var(--orange)
 }
