@@ -9,6 +9,7 @@
   --light-grey:#f4f4f4;
   --grey:#ccd1d9;
   --dark-grey:#666666;
+  --black:#000000;
 }
 
 body{
@@ -212,7 +213,8 @@ background:var(--light-grey);
   border-bottom:0.3125rem solid var(--orange);
    padding:0.625rem;
   margin-bottom:1.875rem; 
-  background:var(--white)
+  background:var(--white);
+  transition:0.3s ease-in-out;
 
 }
 .services .box:hover{
@@ -310,3 +312,92 @@ overflow:hidden;
   }
 }
 
+/*===========PORTFOLIO=======*/
+.portfolio-wrapper{
+  background:var(--light-grey);
+  padding:3rem 0;
+}
+.portfolio-image{
+  width:15rem;
+  padding:0 0.5rem;
+  border:1px solid var(--orange)
+  
+}
+.portfolio-image-box{
+  position:relative;
+  margin:1rem;
+}
+
+/*===========OVERFLOW-BOX=======*/
+
+.overflow{
+ position:absolute;
+ opacity:0;
+ background:var(--black);
+ width: 15rem;
+ height: 9rem;
+ top:0;
+ border:1px solid var(--red);
+ cursor:pointer;
+}
+
+.portfolio-image-box:hover .overflow{
+
+  opacity: 60%;
+  transition:0.3s ease-in-out;
+}
+
+
+.portfolio-icon{
+  opacity:0;
+  position:absolute;
+  color:var(--orange);
+  margin-left:-8rem;
+  margin-top :3.6rem;
+  font-size:1.5rem;
+  }
+
+  .portfolio-image-box:hover .portfolio-icon{
+    opacity: 70%;
+    transition:0.3s ease-in-out;
+  }
+
+  .portfolio-image-popupbox{
+    width :45rem;
+    padding :0 0.5rem;
+  }
+  .hyper-link{
+    cursor:pointer;
+    color:var(--orange)
+  }
+
+  .hyper-link:hover{
+   color:var(--red);
+   transition:0.5s ease-in-out;
+  }
+
+  @media(max-width:768px){
+    .portfolio-image-popupbox{
+      width:100%
+    }
+  }
+
+  @media(max-height:570px){
+    .popupbox-wrapper{
+      height :100%
+    }
+    .portfolio-image-popupbox{
+      width :50%
+    }
+    
+  }
+
+  @media(max-height:280px){
+    .popupbox-wrapper{
+      height :90%
+    }
+    .portfolio-image-popupbox{
+      width :20%
+    }
+    
+  }
