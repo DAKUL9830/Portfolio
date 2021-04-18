@@ -10,6 +10,7 @@
   --grey:#ccd1d9;
   --dark-grey:#666666;
   --black:#000000;
+  --transparent-black: rgba(0,0,0,0.7);
 }
 
 body{
@@ -400,4 +401,64 @@ overflow:hidden;
       width :20%
     }
     
+  }
+
+
+  /*===========TESTIMONIALS-GAME-PROJECTS=======*/
+
+  .testimonials{
+    background-image:url(unity.jpeg);
+    background-size:cover;
+    background-color:var(--black);
+    text-align:center;
+    padding-bottom:4rem;
+   margin-bottom: 0;
+    width:100%
+  }
+  .testimonials h1{
+    color:var(--black);
+    padding:3rem 0;
+    text-transform:uppercase;
+
+  }
+  .testimonials-content{
+   text-align:center;
+   max-width:53.125rem;
+   margin: 0 auto 2rem auto;
+   background:var(--transparent-black);
+  }
+
+  .myCarousel{
+    color:var(--white);
+    background:transparent;
+    margin-top:-6%;
+    width:54%;
+    margin-left:auto;
+    margin-right:auto;
+    padding-top:6%;
+    padding-bottom:8%;
+    padding-left:5%;
+    padding-right:5%;
+    height:20rem;
+    
+  }
+
+  .myCarousel h3{
+    color:var(--orange)
+  }
+
+  .carousel .slide img{
+    width:10rem !important;
+    border-radius:20%;
+  }
+
+  .carousel .slide{
+    background:transparent !important;
+    height :100% !important;
+    padding-top :2rem;
+  }
+
+  .carousel-root{
+    margin:auto !important;
+    margin-top:3% !important;
   }
