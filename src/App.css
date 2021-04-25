@@ -1,5 +1,5 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
-
 :root{
   --white:#fff;
   --orange:#f9ab00;
@@ -10,11 +10,12 @@
   --grey:#ccd1d9;
   --dark-grey:#666666;
   --black:#000000;
+  --green:green;
   --transparent-black: rgba(0,0,0,0.7);
 }
 
 body{
-font-family:"Roboto Condensed",sans-serif!important;
+font-family:'Roboto',sans-serif !important ;
 };
 .App {
   text-align: center;
@@ -416,7 +417,7 @@ overflow:hidden;
     width:100%
   }
   .testimonials h1{
-    color:var(--black);
+    color:var(--white);
     padding:3rem 0;
     text-transform:uppercase;
 
@@ -447,6 +448,14 @@ overflow:hidden;
     color:var(--orange)
   }
 
+  /* .myCarousel b{
+ font-size:1.5rem;
+  }
+  .myCarousel a{
+    font-size:1.5rem;
+    
+  } */
+
   .carousel .slide img{
     width:10rem !important;
     border-radius:20%;
@@ -462,3 +471,105 @@ overflow:hidden;
     margin:auto !important;
     margin-top:3% !important;
   }
+
+/*===========CONTACTS=======*/
+
+.contacts{
+  background:var(--dark);
+  padding:3rem 0;
+
+
+}
+
+.contacts h1{
+  color:var(--orange);
+  padding:1.3rem 0;
+  text-transform:uppercase;
+}
+.contacts p{
+  color:var(--light-grey);
+  font-size:1.2rem;
+}
+
+/*===========INPUTS=======*/
+.contacts input,.contacts textarea {
+
+  width:100%;
+  box-sizing:border-box;
+  background:none;
+  resize:none;
+  border:0;
+  border-bottom :0.125rem solid var(--dark-grey);
+  border-radius:0;
+  color:var(--grey);
+  outline:0 !important;
+  box-shadow :none !important;
+  margin-bottom:1rem;
+  padding-left:0;
+
+}
+ .contacts.container {
+   padding: 4rem 0;
+ }
+
+ .contacts input:focus,.contacts textarea:focus {
+   background:transparent;
+   color:var(--orange);
+   border-bottom:0.125rem solid var(--dark-grey);
+ }
+
+
+.contacts button{
+  margin:1rem 0 0 0;
+  width:100%
+}
+
+.contacts textarea{
+  height:12.3rem !important;
+}
+
+.line{
+  position:relative;
+  top:-0.8rem;
+  width:0;
+  height:0.125rem;
+  background:var(--orange);
+  display:inline-block;
+}
+
+input:focus+.line,textarea:focus+.line{
+  width:100%;
+  transition:0.5s ease-in-out;
+}
+
+input.form-control{
+  margin: -0.3rem 0;
+}
+textarea.form-control{
+  margin:-0.3rem 0;
+}
+
+.error-message{
+  color:var(--white);
+  background:var(--hover-red);
+  text-align:left;
+}
+
+.success-message{
+  font-weight:900;
+  color:var(--green);
+}
+/*===========MEDIA=======*/
+
+@media(max-width: 768px){
+  .contacts{
+    overflow-x:hidden;
+  }
+  .contacts .container{
+    padding:0 1rem;
+  }
+  .contacts p{
+    padding:0 0.4rem;
+  }
+  
+}
