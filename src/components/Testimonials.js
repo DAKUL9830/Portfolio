@@ -3,7 +3,7 @@ import TestimonialCarousel from './TestimonialCarousel.js';
 
 const Testimonials = () => {
     return (
-        <div className="testimonials">
+        <div id='testimonials' className="testimonials">
             <h1>My Unity Game Projects and testimonials</h1>
             <div className='container'>
                 <div className='testimonials-content'>

@@ -36,7 +36,7 @@ const Contacts = () => {
           }).catch(err=> console.error(`Something went wrong ${err}`));
       }
     return (
-        <div className='contacts'>
+        <div id='contacts' className='contacts'>
           <div className='text-center'>
               <h1>contact me</h1>
             <p>You may contact me anytime and I will responce as soon as possible</p>
@@ -117,7 +117,7 @@ const Contacts = () => {
                         id='description'
                         type='text'
                         className='form-control'
-                        placeholder='Email'
+                        placeholder='Description'
                         name='description'
                         {...register('description', { required: true})}
                         ></textarea>

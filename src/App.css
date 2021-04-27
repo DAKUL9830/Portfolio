@@ -76,7 +76,7 @@ nav ul li{
  border-top:0.1875rem solid var(--dark)
 
 }
-.navbar-nav > li > a.active,.navbar-nav > li > a.active:focus{
+.navbar-nav > li > a.active,.navbar-nav > li > a:focus{
   border-top:0.1875rem solid var(--orange)
 }
 .navbar-nav > li > a:hover{
@@ -572,4 +572,26 @@ textarea.form-control{
     padding:0 0.4rem;
   }
   
+}
+
+
+/*===========FOOTER=======*/
+
+.footer{
+background:var(--black);
+color: var(--dark-grey);
+padding:3rem;
+}
+
+.footer a{
+  text-decoration:none;
+  color:var(--dark-grey);
+}
+.footer a:hover{
+  text-decoration:none;
+  color:var(--orange);
+  cursor:pointer;
+}
+.footer p{
+  margin-bottom: 0;
 }
